@@ -11,25 +11,25 @@
     --green:#0e8f6c; --green-dim:#9ad6c0; --amber:#a86f12; --red:#c44e3e; --blue:#2c7fb0;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue","Microsoft YaHei",sans-serif;line-height:1.6;font-size:14px}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue","Microsoft YaHei",sans-serif;line-height:1.6;font-size:13px}
   .wrap{max-width:1120px;margin:0 auto;padding:26px 20px 50px}
   header{border:1px solid var(--line);border-radius:14px;padding:26px 30px;background:linear-gradient(135deg,#f0f7f4 0%,#ffffff 60%);margin-bottom:20px}
-  header .kicker{color:var(--green);font-size:12px;letter-spacing:2px;font-weight:600}
-  header h1{font-size:26px;margin:8px 0 6px;font-weight:700;color:#111}
-  header .sub{color:var(--muted);font-size:13px}
+  header .kicker{color:var(--green);font-size:11px;letter-spacing:2px;font-weight:600}
+  header h1{font-size:25px;margin:8px 0 6px;font-weight:700;color:#111}
+  header .sub{color:var(--muted);font-size:12px}
             nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px}
-  nav.toc a{color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:5px 11px;font-size:12px;background:#fff}
+  nav.toc a{color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:5px 11px;font-size:11px;background:#fff}
   nav.toc a:hover{color:var(--green);border-color:var(--green)}
   section{margin-bottom:26px}
-  h2{font-size:18px;font-weight:700;margin-bottom:10px;padding-left:11px;border-left:4px solid var(--green);color:#111}
-  h3{font-size:15px;font-weight:600;margin:16px 0 8px;color:var(--text)}
+  h2{font-size:17px;font-weight:700;margin-bottom:10px;padding-left:11px;border-left:4px solid var(--green);color:#111}
+  h3{font-size:14px;font-weight:600;margin:16px 0 8px;color:var(--text)}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:14px}
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
   .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
-  .stat .l{color:var(--muted);font-size:11.5px}
-  .stat .v{font-size:22px;font-weight:700;color:var(--green);margin-top:2px}
-  .stat .s{color:var(--muted);font-size:11.5px}
-  table{width:100%;border-collapse:collapse;font-size:12.5px;background:#fff;border-radius:12px;overflow:hidden}
+  .stat .l{color:var(--muted);font-size:10.5px}
+  .stat .v{font-size:21px;font-weight:700;color:var(--green);margin-top:2px}
+  .stat .s{color:var(--muted);font-size:10.5px}
+  table{width:100%;border-collapse:collapse;font-size:11.5px;background:#fff;border-radius:12px;overflow:hidden}
   th,td{border:1px solid var(--line);padding:9px 11px;vertical-align:top;text-align:left}
   th{background:var(--panel2);color:var(--green);font-weight:600;white-space:nowrap}
   td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
@@ -44,22 +44,22 @@
   .timeline li:last-child{border-bottom:none}
   .timeline .t{color:var(--green);font-weight:700;font-variant-numeric:tabular-nums;padding-top:2px}
   .timeline .c b{color:var(--text)}
-  .timeline .c .r{color:var(--muted);font-size:12px;display:block;margin-top:2px}
-  .timeline .m{display:flex;align-items:center;gap:6px;margin-top:5px;font-size:12px;color:var(--blue);background:#f3f8fc;border:1px solid #d6e6f2;border-radius:6px;padding:3px 9px;width:fit-content}
+  .timeline .c .r{color:var(--muted);font-size:11px;display:block;margin-top:2px}
+  .timeline .m{display:flex;align-items:center;gap:6px;margin-top:5px;font-size:11px;color:var(--blue);background:#f3f8fc;border:1px solid #d6e6f2;border-radius:6px;padding:3px 9px;width:fit-content}
   .timeline .m b{color:var(--blue)}
-  .note{font-size:12.5px;color:var(--muted);margin-top:8px}
-  .wx{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px;color:var(--muted)}
+  .note{font-size:11.5px;color:var(--muted);margin-top:8px}
+  .wx{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:12px;color:var(--muted)}
   .wx b{color:var(--text);font-weight:600}
   ul.list{padding-left:20px}
   ul.list li{margin-bottom:7px}
   ul.list li b{color:var(--text)}
-  .src{font-size:11.5px;color:var(--muted);line-height:1.7}
-  .src code{background:var(--panel2);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:11px;color:var(--text)}
-  .footer{border-top:1px solid var(--line);margin-top:26px;padding-top:14px;color:var(--muted);font-size:11.5px;text-align:center}
+  .src{font-size:10.5px;color:var(--muted);line-height:1.7}
+  .src code{background:var(--panel2);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:10px;color:var(--text)}
+  .footer{border-top:1px solid var(--line);margin-top:26px;padding-top:14px;color:var(--muted);font-size:10.5px;text-align:center}
   @media (max-width:640px){
-    header{padding:18px 16px} header h1{font-size:21px}
+    header{padding:18px 16px} header h1{font-size:20px}
     .timeline li{grid-template-columns:60px 1fr;gap:10px}
-    table{font-size:11.5px} th,td{padding:7px}
+    table{font-size:10.5px} th,td{padding:7px}
   }
 </style>
 </head>
@@ -256,18 +256,18 @@
   <h2>⑤ 详细行程（自驾版 · 小径湾限定）</h2>
   <div class="card" style="border-color:var(--green-dim);background:#f0f9f6">
     <h3 style="margin-top:0">路线设计逻辑</h3>
-    <p style="font-size:13px">先东后西，<b>车停两次、每次停好都不再挪</b>。上午把车停十里银滩水蓝天车库（15 元/天），走 4 分钟到井珠阁旁边下沙滩，早上人少；11:30 开门就吃海鲜，不用等位。饭后取车西行 3km 到小径湾，停韵景二路免费路边格（满位进梵高的海）就不再动——商业街 · 西西弗 · 绿道 · 艾美 · 太兴全在步行圈里。</p>
+    <p style="font-size:12px">先东后西，<b>车停两次、每次停好都不再挪</b>。上午把车停十里银滩水蓝天车库（15 元/天），走 4 分钟到井珠阁旁边下沙滩，早上人少；11:30 开门就吃海鲜，不用等位。饭后取车西行 3km 到小径湾，停韵景二路免费路边格（满位进梵高的海）就不再动——商业街 · 西西弗 · 绿道 · 艾美 · 太兴全在步行圈里。</p>
     <ul class="list" style="margin-top:6px">
       <li><b>上午 · 十里银滩停车圈</b>（水蓝天车库）→ 井珠阁 280m · 沙滩入口 160m（从井珠阁旁下）</li>
       <li><b>下午 · 小径湾步行圈</b>（韵景二路路边格）→ 沙滩 600m · 商业街 760m · 西西弗 · 艺术中心 · 艾美 950m · 乌山头绿道入口 880m · 太兴 660m，停车后不再碰车</li>
       <li><b>备选餐厅圈</b>（走不动时可开车，单程 3~8 分钟）→ 百鲜居 / 老张家（径东村，北 600~900m）· 陈记窑鸡王（1km）· 霞涌街区（西 6km，返程顺路）</li>
     </ul>
-    <p style="font-size:13px;margin-top:6px">时间上留了两个弹性：14:00–16:00 如果不累就沿绿道往西走 1km 看礁石栈道，累了就在西西弗或大堂吧坐到日落。日落 17:35，17:15 前回到沙滩西端或艾美落地窗前。</p>
+    <p style="font-size:12px;margin-top:6px">时间上留了两个弹性：14:00–16:00 如果不累就沿绿道往西走 1km 看礁石栈道，累了就在西西弗或大堂吧坐到日落。日落 17:35，17:15 前回到沙滩西端或艾美落地窗前。</p>
   </div>
   <div class="card" id="routemap">
     <h3 style="margin-top:0">互动地图（腾讯地图底图 · 可拖动 / 缩放 / 点击标记）</h3>
     <div id="leafletMap" style="height:520px;border-radius:10px;border:1px solid var(--line);background:#e9eef0"></div>
-    <div style="display:flex;flex-wrap:wrap;gap:8px 18px;font-size:12px;color:var(--muted);margin-top:8px">
+    <div style="display:flex;flex-wrap:wrap;gap:8px 18px;font-size:11px;color:var(--muted);margin-top:8px">
       <span><svg width="14" height="14" style="vertical-align:-2px"><circle cx="7" cy="7" r="6" fill="#0e8f6c"/></svg> 景点（编号=时间轴顺序）</span>
       <span><svg width="14" height="14" style="vertical-align:-2px"><rect x="1" y="1" width="12" height="12" rx="3" fill="#a86f12"/></svg> 餐厅</span>
       <span><svg width="14" height="14" style="vertical-align:-2px"><rect x="1" y="1" width="12" height="12" rx="3" fill="#2c7fb0"/></svg> 停车场</span>
@@ -628,7 +628,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 /* general typography */
 .leaflet-container {
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-size:11px;
 	font-size: 0.75rem;
 	line-height: 1.5;
 	}
@@ -699,7 +699,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 
 .leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out  {
-	font-size: 22px;
+	font-size:21px;
 	}
 
 
@@ -748,7 +748,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 .leaflet-control-layers label {
 	display: block;
-	font-size: 13px;
+	font-size:12px;
 	font-size: 1.08333em;
 	}
 .leaflet-control-layers-separator {
@@ -842,7 +842,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-popup-content {
 	margin: 13px 24px 13px 20px;
 	line-height: 1.3;
-	font-size: 13px;
+	font-size:12px;
 	font-size: 1.08333em;
 	min-height: 1px;
 	}
@@ -1015,10 +1015,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
 		}
 	}
 
-#leafletMap .leaflet-popup-content { font-size:13px; line-height:1.5; margin:10px 14px; }
+#leafletMap .leaflet-popup-content { font-size:12px; line-height:1.5; margin:10px 14px; }
 #leafletMap .leaflet-popup-content b { display:block; margin-bottom:2px; }
 #leafletMap .leaflet-control-zoom a { color:#1a1d1b; }
-.lm-btn { background:#fff; border:1px solid #d8dedb; border-radius:6px; padding:4px 10px; font-size:12px; cursor:pointer; color:#1a1d1b; }
+.lm-btn { background:#fff; border:1px solid #d8dedb; border-radius:6px; padding:4px 10px; font-size:11px; cursor:pointer; color:#1a1d1b; }
 .lm-btn:hover { background:#f0f9f6; border-color:#0e8f6c; }
 </style>
 <script>
