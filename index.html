@@ -17,12 +17,7 @@
   header .kicker{color:var(--green);font-size:12px;letter-spacing:2px;font-weight:600}
   header h1{font-size:26px;margin:8px 0 6px;font-weight:700;color:#111}
   header .sub{color:var(--muted);font-size:13px}
-  header .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
-  .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:3px 11px;font-size:11.5px;color:var(--text);background:#fff}
-  .tag.g{border-color:var(--green);color:var(--green)}
-  .verdict{border:1px solid var(--green-dim);background:#f0f9f6;border-radius:12px;padding:14px 18px;margin-top:16px;font-size:14px}
-  .verdict b{color:var(--green)}
-  nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px}
+            nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px}
   nav.toc a{color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:5px 11px;font-size:12px;background:#fff}
   nav.toc a:hover{color:var(--green);border-color:var(--green)}
   section{margin-bottom:26px}
@@ -50,6 +45,8 @@
   .timeline .t{color:var(--green);font-weight:700;font-variant-numeric:tabular-nums;padding-top:2px}
   .timeline .c b{color:var(--text)}
   .timeline .c .r{color:var(--muted);font-size:12px;display:block;margin-top:2px}
+  .timeline .m{display:flex;align-items:center;gap:6px;margin-top:5px;font-size:12px;color:var(--blue);background:#f3f8fc;border:1px solid #d6e6f2;border-radius:6px;padding:3px 9px;width:fit-content}
+  .timeline .m b{color:var(--blue)}
   .note{font-size:12.5px;color:var(--muted);margin-top:8px}
   .wx{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px;color:var(--muted)}
   .wx b{color:var(--text);font-weight:600}
@@ -73,16 +70,6 @@
   <div class="kicker">HUIZHOU · XIAOJING BAY · DAY TRIP PLAN</div>
   <h1>小径湾一日游方案</h1>
   <div class="sub">2026年11月27日（周五）· 惠州大亚湾碧桂园翡翠山 ⇄ 华润小径湾 · 当日往返 · 同行 2 人（你 + 妈妈）</div>
-  <div class="meta">
-    <span class="tag g">首选：自驾</span>
-    <span class="tag">单程 30~35 分钟 · 全程只停 1 次车</span>
-    <span class="tag">多云 15~25℃</span>
-    <span class="tag">预算 405~685 元 / 2人</span>
-    <span class="tag">全部景点免费</span>
-  </div>
-  <div class="verdict">
-    <b>结论：</b>11月27日多云为主、微风，适合出行。小径湾限定版：车停梵高的海停车场后<b>全程步行</b>，不用取车、不用打车。路线「沙滩 → 商业街 / 西西弗 → 百鲜居午餐（东 3km 短驾）→ 回商业街歇脚 → 乌山头绿道走一段 → 艾美大堂吧看日落 → 十里银滩 / 太兴晚餐 → 19:00 回家」，覆盖 6 个景点 + 5 个餐饮点，全天步行约 4km，比全覆盖版少 4 小时、省 160~260 元。
-  </div>
 </header>
 
 <nav class="toc">
@@ -91,9 +78,8 @@
   <a href="#spots">③ 景点</a>
   <a href="#food">④ 餐饮</a>
   <a href="#itinerary">⑤ 分时行程</a>
-  <a href="#budget">⑥ 预算</a>
-  <a href="#backup">⑦ 备选与注意</a>
-  <a href="#sources">⑧ 来源与假设</a>
+  <a href="#backup">⑥ 备选与注意</a>
+  <a href="#sources">⑦ 信息来源与假设</a>
 </nav>
 
 <!-- ===================== 天气 ===================== -->
@@ -116,7 +102,7 @@
 
 <!-- ===================== 交通 ===================== -->
 <section id="transport">
-  <h2>② 交通方式对比（翡翠山 → 华润小径湾）</h2>
+  <h2>② 交通方式对比（翡翠山 → 十里银滩 → 华润小径湾）</h2>
   <div class="tblwrap">
   <table>
     <thead><tr><th>方式</th><th>单程用时</th><th>往返费用（2人）</th><th>舒适度</th><th>往返便利性</th><th>结论</th></tr></thead>
@@ -124,9 +110,9 @@
       <tr>
         <td><b>自驾</b></td>
         <td>30~35 分钟<span class="dim">（惠深沿海高速 27.5km）</span><br>40~45 分钟<span class="dim">（不走高速 24km）</span></td>
-        <td class="num">油费 ~30 + 高速 ~16 + 停车 ~25<br><b>≈ 70 元</b><br><span class="dim">不走高速 ≈ 55 元</span></td>
+        <td class="num">油费 ~30 + 高速 ~16 + 停车 ~15<br><b>≈ 60 元</b><br><span class="dim">不走高速 ≈ 55 元</span></td>
         <td>★★★★★</td>
-        <td>时间完全自由；可带装备；返程顺路霞涌吃晚餐</td>
+        <td>时间完全自由；可带装备；先到十里银滩、再去小径湾，两地停车约 15 元（小径湾路边格免费）</td>
         <td class="rec">首选</td>
       </tr>
       <tr>
@@ -162,6 +148,8 @@
   <table>
     <thead><tr><th>景点</th><th>评分 / 口碑</th><th>位置</th><th>特色亮点</th><th>适合人群 / 时段</th><th>推荐理由与依据</th></tr></thead>
     <tbody>
+      <tr><td><b>十里银滩沙滩</b>（一期浅水湾段）</td><td class="num">携程 4.6 / 惠东景点第 12<br>Trip.com 4.8</td><td>井珠阁旁下沙滩（小径湾东 3km）</td><td>5km 面粉级细沙、「果冻海」渐变蓝；早 10 点前几乎无人；沙滩伞 40~50 元/天</td><td>全家 · 09:45–11:20</td><td>与小径湾同一条海岸线，沙更细人更少；<b>无救生员、配套少</b>，只散步不下水；上午顺光拍照最好</td></tr>
+      <tr><td><b>礁石公园</b></td><td class="num">携程 4.8 / 11 条<br>腾讯地图 3.8</td><td>井珠阁往南 500m（海云天东南角）</td><td>亿年黑灰火山岩礁石群，拍「冰岛风」大片；热气球 / 白钢琴 / 鸟巢等免费拍照摆件；旁边妈祖庙；退潮岩缝可捡小螃蟹贝壳</td><td>拍照 / 赶海 · 上午或 17:00 后</td><td>惠州婚纱照取景点；<b>礁石长青苔极滑，穿防滑鞋</b>；10 点前摆件不用排队</td></tr>
       <tr><td><b>华润小径湾沙滩</b></td><td class="num">携程 4.5 / 52 条<br>惠州亲子景点榜 No.2</td><td>霞涌小径湾商业街</td><td>3km 细白沙滩；商业街有西西弗书店、海边咖啡、艺术中心；有淡水冲洗区</td><td>全家 · 09:00–17:30</td><td>度假区核心，配套最成熟；携程亲子榜第 2，评价基数大</td></tr>
       <tr><td><b>乌山头绿道</b></td><td class="num">携程 4.8 / 4 条<br>官方六站之一</td><td>西接黄金海岸、东连小径湾</td><td>3.3km 彩色沥青滨海步道（2026-02 翻新后官方口径），3 处观海台 + 礁石栈道；《追光的日子》取景；傍晚亮灯</td><td>骑行 / 徒步 · 16:00 后</td><td>惠州发布 11/18 官方「必打卡」；16 点后逆光最佳；禁私人两轮电驴上道</td></tr>
       <tr><td><b>黄金海岸</b></td><td class="num">携程 4.6 / 23 条</td><td>霞光二路 1 号</td><td>1800m 月牙形沙滩，大亚湾最宽；游客中心/淋浴室/咖啡/免费热水冲脚池；租车 20~68 元/h</td><td>全家 · 14:00–17:00</td><td>省级度假区六站之一；停车场 3600 位配充电桩</td></tr>
@@ -193,18 +181,39 @@
 <!-- ===================== 餐饮 ===================== -->
 <section id="food">
   <h2>④ 餐饮选择（大众点评 / 携程 / 惠州发布口径，查询于 2026-11-26）</h2>
-  <p class="note" style="margin:0 0 8px"><b>小径湾限定版：</b>午餐在百鲜居 / 太兴 / 老张家中选，下午茶在北纬 22 度 / REDMACHINE / always 中选，晚餐在太兴 / REDMACHINE / 乐美中选。晚餐表里的霞涌海鲜街不在小径湾，本次不去。</p>
+  <p class="note" style="margin:0 0 8px"><b>小径湾限定版：</b>午餐在井珠阁（十里银滩沙滩边）/ 太兴 / 老张家中选，下午茶在北纬 22 度 / REDMACHINE / always 中选，晚餐在太兴 / REDMACHINE / 乐美中选。晚餐表里的霞涌海鲜街不在小径湾，本次不去。<b>另附十里银滩三期小吃圈备选</b>（万田超市周边 300m，与井珠阁同方向、再往东 1km）。</p>
 
   <h3 style="margin-top:0">午餐 · 小径湾沙滩周边（人均 55~140）</h3>
   <div class="tblwrap">
   <table>
     <thead><tr><th>店名</th><th>评分 / 口碑</th><th>人均</th><th>位置</th><th>特色亮点</th><th>推荐理由与依据</th></tr></thead>
     <tbody>
-      <tr><td><b>百鲜居 · 本地农家菜 · 海鲜 · 窑鸡大排档</b>（小径湾十里银滩店）</td><td class="num ok">点评 4.8<br>惠阳农家菜好评榜 第 1 名<br>到店 795 · 推荐菜 56 道</td><td class="num">31~60</td><td>小径湾东侧约 3km（十里银滩）</td><td>荔枝木土窑鸡、自养白切鸡/咸鸡、海胆炒饭、蚝仔煎蛋、鱼露鸭</td><td class="rec">点评农家菜榜第一，评价基数最大；窑鸡 + 农家菜适合带妈妈；性价比最高</td></tr>
+      <tr><td><b>井珠阁海鲜饭店</b>（小径湾十里银滩店）</td><td class="num ok">点评 4.6 / 4715 条<br>十里银滩鱼鲜好评榜 第 1 名<br>Trip.com 4.8 / 110 条</td><td class="num">77~93</td><td>十里银滩一期浅水湾旁，<b>离沙滩 160m</b>（小径湾东 3km）</td><td>虾仁海胆炒饭、椒盐濑尿虾、酱油皇鱿鱼、姜葱炒花蟹；自建房装修，干净居家</td><td class="rec">十年老字号，点评基数最大；午市 11:00–14:30，11:30 到不等位；门前走 160m 就是沙滩，车停水蓝天 280m，停车 · 沙滩 · 吃饭一个点完成</td></tr>
+      <tr><td><b>星航海鲜客家菜 · 窑鸡王</b>（小径湾十里银滩店）</td><td class="num ok">点评 4.7 / 106 道推荐菜<br>十里银滩美食好评榜 第 1 名</td><td class="num">45~48</td><td>盐灶背鼓珠石大厦 1 楼（十里银滩沙滩约 500m）</td><td>农家土窑鸡、客家酿豆腐、白灼海虾、酱爆鱿鱼筒</td><td class="rec">十里银滩边想吃窑鸡选这家；10:00 开门，人均最低</td></tr>
+      <tr><td><b>百鲜居 · 本地农家菜 · 海鲜 · 窑鸡大排档</b>（小径湾店）</td><td class="num ok">点评 4.8<br>惠阳农家菜好评榜 第 1 名<br>到店 795 · 推荐菜 56 道</td><td class="num">31~60</td><td>小径湾径东村（停车场北约 600m，步行约 15 分钟）</td><td>荔枝木土窑鸡、自养白切鸡/咸鸡、海胆炒饭、蚝仔煎蛋、鱼露鸭</td><td class="rec">农家菜榜第一、性价比最高；<b>不在十里银滩沙滩边</b>，在北侧径东村，吃完要另开车去沙滩，作备选</td></tr>
       <tr><td><b>老张家海鲜农庄 · 客家菜</b>（小径湾店）</td><td class="num ok">腾讯地图 4.8</td><td class="num">62</td><td>小径湾径东村（距沙滩约 900m）</td><td>本地海鲜 + 土窑鸡 + 自种青菜</td><td>距沙滩最近的高分农家店，步行/短驾都方便</td></tr>
       <tr><td><b>陈记窑鸡王 · 客家菜海鲜</b>（小径湾店）</td><td class="num ok">腾讯地图 4.6</td><td class="num">60</td><td>晓阳村（距小径湾约 1km）</td><td>十八年老字号窑鸡</td><td>老字号、11:00 开门，适合 12:00 前到</td></tr>
       <tr><td><b>太兴餐厅</b>（小径湾店）</td><td class="num ok">点评 5.0<br>港澳连锁</td><td class="num">78</td><td>小径湾商业街 S2 栋</td><td>港式茶餐厅，落地玻璃海景；滑蛋叉烧粉丝煲、蒜香黑椒鸡中翼</td><td>环境最舒适的午餐选项；周末需等位，周五无压力；不吃海鲜时的稳妥选择</td></tr>
       <tr><td><b>乐美客家小馆 · 海景餐厅</b>（艾美店）</td><td class="num ok">腾讯地图 4.5<br>Trip.com 4.8 / 45 条</td><td class="num">134</td><td>小径湾艾美酒店 1 层</td><td>海景粤菜；工作日午市点心自助约 138 元/人（公众号/点评买券）</td><td>午餐升级选项；注意有住客反馈晚市海鲜品类少，午市点心更稳</td></tr>
+      <tr><td><b>温记潮汕牛肉店</b>（海润路店）</td><td class="num">Trip.com 3.4 / 9 条<br>点评「米其林推荐」口碑</td><td class="num">25~30</td><td>小径海岸城花园 17 栋 1 层 13 号房（<b>梵高的海小区边上，停车场步行 3 分钟</b>）</td><td>牛肉粿条 25 元（七八片厚切牛肉）、炒牛河、牛肉丸；手工粿条；沙茶酱 + 芹菜粒</td><td class="rec">营业中 · 09:30–21:00 · 电话 13413154868<br>最新点评 2026-07 · <span class="dim">网友称「潮汕鲜牛肉粿条」，菜单名可能为招牌</span>；12:00–13:00 排队，错峰去</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>备选 · 十里银滩三期小吃圈（万田超市周边 300m · 均在营业）</h3>
+  <p class="note" style="margin:0 0 8px">位置在井珠阁以东 1km（三期金海岸商业街 / 海鲜市场一带），自驾 3 分钟。以下 8 家按 2026-11 腾讯地图 / 点评 / 携程 / 公众号核对，<b>全部有营业记录</b>（戈记烧烤仅晚市，不适用午餐）；周五午餐可作井珠阁排队的替换。带妈妈优先：渔林点心（清淡早茶）、东北人家铁锅炖（分量足）；辣口两家（牧香源 / 阿卜烤串）视口味。</p>
+  <div class="tblwrap">
+  <table>
+    <thead><tr><th>店名</th><th>评分 / 口碑</th><th>人均</th><th>位置</th><th>特色亮点</th><th>营业核对（2026-11-26）</th></tr></thead>
+    <tbody>
+      <tr><td><b>渔林海鲜点心楼</b>（十里银滩店）</td><td class="num ok">携程 4.0 / 5 条<br>Trip.com 4.0</td><td class="num">38</td><td>石化大道东渡潮湾广场 1 楼 A1–A6（<b>井珠阁同片区</b>，三期商业街对面）</td><td>早茶 / 夜茶 / 粤菜客家菜；虾饺皇（28 元 4 只）、陈皮牛肉球、红米金沙虾肠、蜜汁叉烧；每桌配烧水壶自己泡茶</td><td class="rec">营业中 · 08:00–22:00 · 电话 13431898666<br>最新点评 2026-02 · 公众号「小径湾映像」推荐</td></tr>
+      <tr><td><b>东北人家东北菜铁锅炖</b></td><td class="dim">城市吧 / 都市圈收录<br>公众号「老板两口子实在，菜量大」</td><td class="num">大锅 4 人量</td><td>三期海鲜市场金海岸商业街 10 号铺（万田超市 44m）</td><td>铁锅炖排骨豆角贴玉米饼；东北大拉皮、锅贴、花卷；量大适合家庭</td><td class="rec">营业中 · 11:00 起 · 电话 17722967515<br>公交「银滩海鲜市场 / 金海岸商业街」站<br><span class="dim">注意：腾讯地图同名条目 (22.7497,114.9528) 在巽寮湾，是另一家，勿导航错</span></td></tr>
+      <tr><td><b>牧香源湘菜馆</b>（碧桂园店）</td><td class="num">腾讯地图 4.1<br>点评「全十里银滩最好的川菜湘菜馆」</td><td class="num">78~92</td><td>三期一号（万田超市 98m）</td><td>湘菜：辣椒炒肉、剁椒鱼头；兼有烤羊排（210 元/10 块）、牛一锅、葱油饼</td><td class="rec">营业中 · 11:00–23:30 · 电话 13530462810<br>最新点评 2026 · 原蒙古餐厅，现转川湘菜</td></tr>
+      <tr><td><b>新疆阿卜烤羊肉串</b></td><td class="num">腾讯地图 3.7<br>Trip.com 3.8 / 5 条</td><td class="num">61~65</td><td><b>小径湾梵高的海南 1 门旁</b>（停车场步行 450m）；三期万田超市旁另有一家</td><td>炭火羊肉串、红柳木串、烤羊排、烤馕；室外座</td><td class="rec">营业中 · 最新点评 2026-05（「晚上 8 点后露台位宽松」）<br><span class="dim"> BBQ 偏晚市，午餐不一定开</span></td></tr>
+      <tr><td><b>许记潮汕汤粉</b>（爱琴海店）</td><td class="num">腾讯地图 4.0</td><td class="num">25</td><td>三期海鲜市场金海岸商业街 10 号铺（万田超市 44m，与铁锅炖同址）</td><td>潮汕粿条 / 汤粉 15–30 元，牛肉丸鱼丸弹牙；午市有猪脚饭 20 元起；炸蒜蓉可买</td><td class="rec">营业中 · 外卖 18924633112 · 公众号「小径湾 9 家苍蝇馆子」收录</td></tr>
+      <tr><td><b>五谷渔粉</b>（十里银滩三期店）</td><td class="num">腾讯地图 4.0</td><td class="num">21</td><td>海头埔苑 15 号楼 3 单元 1 层 5-3 号（万田超市隔壁 37m）</td><td>招牌渔粉 16 元一大碗：四色五谷粉 + 鱼片 + 豆腐 + 酸菜 + 花生；筒骨汤底</td><td class="rec">营业中 · 07:30–21:30 · 电话 13713919479 · 开了十几年</td></tr>
+      <tr><td><b>胃口福爆汁鲜饺</b></td><td class="dim">公众号推荐（2026 夏）</td><td class="dim">—</td><td>三期万田超市旁（具体铺位未上地图）</td><td>手工现包饺子，韭菜馅加马蹄粒；瓦罐煨汤</td><td class="rec"><b>仅公众号有记录，腾讯地图 / 点评 / 携程均无条目</b> · 公众号称「新开」<br><span class="dim">导航到万田超市后现场找；不建议专程去</span></td></tr>
+      <tr><td><b>戈记锋味小炉子烧烤</b></td><td class="num ok">腾讯地图 4.3<br>点评「烤生蚝 / 羊肉串」，有团购</td><td class="num">68</td><td>石化大道东星海岸家居广场 A101（万田超市 152m，盐灶背三桥旁）</td><td>小炉子炭火烧烤：烤生蚝、扇贝、羊肉串、茄子；室内外都有座</td><td class="rec"><b>仅晚市 18:00–01:00</b> · 电话 13500890655<br>一日游不适用，列出仅供参考</td></tr>
     </tbody>
   </table>
   </div>
@@ -247,10 +256,11 @@
   <h2>⑤ 详细行程（自驾版 · 小径湾限定）</h2>
   <div class="card" style="border-color:var(--green-dim);background:#f0f9f6">
     <h3 style="margin-top:0">路线设计逻辑</h3>
-    <p style="font-size:13px">只玩小径湾，核心就一条线：<b>沙滩 + 商业街</b>（东西约 1.2km），停车一次、步行到底。餐厅分两档——步行档全在商业街 / 艾美内；短驾档在东侧 3km 的十里银滩（百鲜居），吃完顺路看一眼十里银滩沙滩再回来。</p>
+    <p style="font-size:13px">先东后西，<b>车停两次、每次停好都不再挪</b>。上午把车停十里银滩水蓝天车库（15 元/天），走 4 分钟到井珠阁旁边下沙滩，早上人少；11:30 开门就吃海鲜，不用等位。饭后取车西行 3km 到小径湾，停韵景二路免费路边格（满位进梵高的海）就不再动——商业街 · 西西弗 · 绿道 · 艾美 · 太兴全在步行圈里。</p>
     <ul class="list" style="margin-top:6px">
-      <li><b>步行圈</b>（停车后不碰车）→ 沙滩 · 商业街 · 西西弗 · 艺术中心 · 艾美大堂吧 · 乌山头绿道小径湾入口</li>
-      <li><b>短驾圈</b>（单程 5~8 分钟）→ 百鲜居 / 十里银滩沙滩（东 3km）· 老张家（900m）· 陈记窑鸡王（1km）</li>
+      <li><b>上午 · 十里银滩停车圈</b>（水蓝天车库）→ 井珠阁 280m · 沙滩入口 160m（从井珠阁旁下）</li>
+      <li><b>下午 · 小径湾步行圈</b>（韵景二路路边格）→ 沙滩 600m · 商业街 760m · 西西弗 · 艺术中心 · 艾美 950m · 乌山头绿道入口 880m · 太兴 660m，停车后不再碰车</li>
+      <li><b>备选餐厅圈</b>（走不动时可开车，单程 3~8 分钟）→ 百鲜居 / 老张家（径东村，北 600~900m）· 陈记窑鸡王（1km）· 霞涌街区（西 6km，返程顺路）</li>
     </ul>
     <p style="font-size:13px;margin-top:6px">时间上留了两个弹性：14:00–16:00 如果不累就沿绿道往西走 1km 看礁石栈道，累了就在西西弗或大堂吧坐到日落。日落 17:35，17:15 前回到沙滩西端或艾美落地窗前。</p>
   </div>
@@ -261,99 +271,45 @@
       <span><svg width="14" height="14" style="vertical-align:-2px"><circle cx="7" cy="7" r="6" fill="#0e8f6c"/></svg> 景点（编号=时间轴顺序）</span>
       <span><svg width="14" height="14" style="vertical-align:-2px"><rect x="1" y="1" width="12" height="12" rx="3" fill="#a86f12"/></svg> 餐厅</span>
       <span><svg width="14" height="14" style="vertical-align:-2px"><rect x="1" y="1" width="12" height="12" rx="3" fill="#2c7fb0"/></svg> 停车场</span>
-      <span><svg width="40" height="14" style="vertical-align:-2px"><path d="M2,7 L34,7" stroke="#0e8f6c" stroke-width="2.4"/></svg> 驾车</span>
-      <span><svg width="40" height="14" style="vertical-align:-2px"><path d="M2,7 L34,7" stroke="#0e8f6c" stroke-width="2.4" stroke-dasharray="7 4"/></svg> 步行 / 绿道</span>
+      <span><svg width="40" height="14" style="vertical-align:-2px"><path d="M2,7 L34,7" stroke="#2c7fb0" stroke-width="2.4"/></svg> 驾车（3 段）</span>
+      <span><svg width="40" height="14" style="vertical-align:-2px"><path d="M2,7 L34,7" stroke="#0e8f6c" stroke-width="2.4" stroke-dasharray="7 4"/></svg> 步行（停车后）</span>
+      <span><svg width="14" height="14" style="vertical-align:-2px"><rect x="1" y="1" width="12" height="12" rx="3" fill="#a86f12" opacity="0.5"/></svg> P1 / P2 = 停车顺序</span>
     </div>
-    <p class="note">底图为腾讯地图瓦片，通过开源库 Leaflet 1.9.4 渲染（已内嵌本文件）；打开页面时需联网加载瓦片。坐标为腾讯地图 POI（2026-11-26 检索）。点击任一标记可看名称、时间与提示；右上角按钮切换「步行圈 / 含十里银滩」视野。</p>
-  </div>
-  <div class="card" id="mobility">
-    <h3 style="margin-top:0">停好车以后，是步行还是打车？</h3>
-    <p style="font-size:13px;margin-bottom:8px">结论：<b>全天打车 0 次。</b>只在 09:35 停一次车，之后除了去百鲜居午餐（东 3km，可驾可不打）以外全程步行。步行总量约 <b>4km</b>，单段最长 1.2km。</p>
-    <div class="tblwrap">
-    <table>
-      <thead><tr><th>时段</th><th>路段 / 地点</th><th>移动方式</th><th>说明</th></tr></thead>
-      <tbody>
-        <tr><td class="num">09:00 → 09:35</td><td>翡翠山 → 小径湾</td><td>🚗 驾车 27.5km / 31 分钟</td><td class="dim">高速 + 松涛路</td></tr>
-        <tr><td class="num">09:35 – 11:30</td><td>小径湾沙滩 · 商业街 · 西西弗</td><td>🚶 全步行（沙滩到商业街 <500m）</td><td class="dim">停「梵高的海」，车一直停到 17:50</td></tr>
-        <tr><td class="num">11:30 → 11:40</td><td>小径湾 → 百鲜居（十里银滩）</td><td>🚗 驾车 3km / 8 分钟 <span class="dim">或 🚕 12 元</span></td><td class="dim">不想动车就换太兴（商业街内，步行）</td></tr>
-        <tr><td class="num">11:40 – 12:50</td><td>百鲜居</td><td>🚶 店内</td><td class="dim">店门口免费停车</td></tr>
-        <tr><td class="num">12:50 – 13:20</td><td>十里银滩沙滩</td><td>🚶 沙滩步行 800m</td><td class="dim">顺路，人少；午后光线强，帽子必备</td></tr>
-        <tr><td class="num">13:20 → 13:30</td><td>十里银滩 → 小径湾</td><td>🚗 驾车 3km / 8 分钟</td><td class="dim">回到梵高的海停车场</td></tr>
-        <tr><td class="num">13:30 – 15:30</td><td>西西弗书店 · 海边咖啡 · 艺术中心</td><td>🚶 商业街内步行 <300m</td><td class="dim">最热时段在室内歇脚</td></tr>
-        <tr><td class="num">15:30 – 16:40</td><td>乌山头绿道（小径湾入口往西 1km）</td><td>🚶 步行往返 2km <span class="dim">或 🚴 租车</span></td><td class="dim">16 点后逆光；不想走就在大堂吧坐到日落</td></tr>
-        <tr><td class="num">16:40 – 17:40</td><td>艾美大堂吧 · 沙滩日落</td><td>🚶 绿道出口即艾美旁，步行 2 分钟</td><td class="dim">日落 17:35</td></tr>
-        <tr><td class="num">17:40 – 17:50</td><td>商业街 → 取车</td><td>🚶 步行 300m</td><td class="dim">—</td></tr>
-        <tr><td class="num">17:50 – 18:00</td><td>停车场 → 太兴餐厅</td><td>🚗 驾车 3km / 6 分钟 <span class="dim">或留在商业街吃 REDMACHINE</span></td><td class="dim">—</td></tr>
-        <tr><td class="num">18:00 – 19:00</td><td>晚餐 · 太兴餐厅</td><td>🚶 店内</td><td class="dim">落地玻璃海景港式茶餐厅</td></tr>
-        <tr><td class="num">19:00</td><td>小径湾返程</td><td>🚗 驾车 27.5km / 31 分钟</td><td class="dim">松涛路 → 惠深沿海高速</td></tr>
-        <tr><td class="num">19:35</td><td>到家</td><td>—</td><td class="dim">比全覆盖版早 1 小时</td></tr>
-      </tbody>
-    </table>
-    </div>
-    <p class="note">走路总量：沙滩 ≈1.5km · 十里银滩 ≈0.8km · 商业街 ≈0.5km · 绿道往返 ≈1.2km → 全天约 <b>4km</b>。若删掉绿道和十里银滩，可压到 2km 以内。</p>
+    <p class="note">底图为腾讯地图瓦片，通过开源库 Leaflet 1.9.4 渲染（已内嵌本文件）；打开页面时需联网加载瓦片。坐标为腾讯地图 POI（2026-11-26 检索）。点击任一标记可看名称、时间与提示；P1 / P2 为两次停车顺序（P2 为免费路边格，满位进梵高的海）；右上角按钮切换「小径湾 / 含十里银滩 / 全程」视野。</p>
   </div>
   <div class="card">
     <ul class="timeline">
-      <li><span class="t">08:30</span><span class="c"><b>出门前检查</b><span class="r">带外套 / 帽子 / 折叠伞 / 防滑鞋；周五人少不用订位，百鲜居 11:00 开门、太兴 17:30 后晚市</span></span></li>
-      <li><span class="t">09:00</span><span class="c"><b>翡翠山出发</b><span class="r">龙山九路 → 大亚湾大道 → 石化大道 → 惠深沿海高速 → 松涛路（27.5km，约 31 分钟）</span></span></li>
-      <li><span class="t">09:35–11:30</span><span class="c"><b>华润小径湾沙滩 + 商业街</b><span class="r">停梵高的海停车场（官方 4314 位；淡季 5 元/h，35 元封顶），车停到 17:50 不动；沙滩从东头往西走 → 商业街 → 西西弗书店 → 大亚湾文化艺术中心（如开放）→ 海边咖啡；09:45 前人最少、光线柔和适合拍照</span></span></li>
-      <li><span class="t">11:30–11:40</span><span class="c"><b>开车去十里银滩</b><span class="r">东行 3km / 8 分钟；<span class="dim">不想动车：留在商业街吃太兴（S2 栋）或 REDMACHINE（梵高的海 1 栋）</span></span></span></li>
-      <li><span class="t">11:40–12:50</span><span class="c"><b>午餐 · 百鲜居</b>（点评农家菜榜第 1）<span class="r">荔枝木土窑鸡 + 蚝仔煎蛋 + 海胆炒饭，人均 31~60；店门口免费停车</span></span></li>
-      <li><span class="t">12:50–13:20</span><span class="c"><b>十里银滩沙滩</b>（顺路）<span class="r">5km 长滩，人比小径湾少；午后紫外线中等，走 20 分钟即可，不下 水</span></span></li>
-      <li><span class="t">13:20–13:30</span><span class="c"><b>开车回小径湾</b><span class="r">西行 3km / 8 分钟，停回梵高的海</span></span></li>
-      <li><span class="t">13:30–15:30</span><span class="c"><b>西西弗书店 · 海边咖啡 · 艺术中心</b><span class="r">最热的两小时放室内：书店有座位、咖啡有海景；艺术中心看当天有无展览</span></span></li>
-      <li><span class="t">15:30–16:40</span><span class="c"><b>乌山头绿道 · 小径湾入口往西</b><span class="r">从商业街西侧入口上绿道，往西走 1km 到第一处观海台 + 礁石栈道，原路返回（往返 2km）；16 点后逆光最佳；<span class="dim">体力有限：在艾美大堂吧坐着看海到日落，或在入口租双人单车骑 30 分钟</span></span></span></li>
-      <li><span class="t">16:40–17:40</span><span class="c"><b>艾美大堂吧 · 北纬 22 度 · 看日落</b><span class="r">绿道出口即艾美旁；下午茶套餐 168（落地窗海景，携程 4.4）或只点两杯咖啡；日落 17:35，17:15 前到位</span></span></li>
-      <li><span class="t">17:40–18:00</span><span class="c"><b>步行取车 → 开去太兴</b><span class="r">商业街走回停车场 300m；太兴在商业街 S2 栋，可直接步行不去取车（看晚餐后是否直接走）</span></span></li>
-      <li><span class="t">18:00–19:00</span><span class="c"><b>晚餐 · 太兴餐厅</b><span class="r">港式茶餐厅，落地玻璃海景，滑蛋叉烧粉丝煲、蒜香黑椒鸡中翼，人均 78；<span class="dim">备选：REDMACHINE 披萨（人均 90，沙滩边）· 乐美客家小馆（艾美 1 层，海景粤菜）· 老张家（径东村 900m，海鲜 + 窑鸡）</span></span></span></li>
-      <li><span class="t">19:00</span><span class="c"><b>小径湾返程</b><span class="r">松涛路 → 惠深沿海高速 → 翡翠山（27.5km / 31 分钟）；周五晚 19:00 出发已过峰值</span></span></li>
-      <li><span class="t">19:35</span><span class="c"><b>到家</b><span class="r">比全覆盖版早 1 小时，妈妈不累</span></span></li>
+      <li><span class="t">08:30</span><span class="c"><b>出门前检查</b><span class="r">带外套 / 帽子 / 折叠伞 / 防滑鞋（全天步行约 5km）；周五人少不用订位，井珠阁午市 11:00–14:30、太兴 17:30 后晚市；导航先设「碧桂园十里银滩水蓝天」，午餐后再设「韵景二路」（满位改「华润小径湾梵高的海」）</span></span></li>
+      <li><span class="t">09:00</span><span class="c"><b>翡翠山出发 → 十里银滩</b><span class="r">龙山九路 → 大亚湾大道 → 石化大道 → 惠深沿海高速 → 小径湾出口 → 石化大道东行到十里银滩一期（28.5km，约 33 分钟）</span><span class="m">🚗 驾车 28.5km / 约 33 分钟（高速 → 小径湾出口 → 石化大道）</span></span></li>
+      <li><span class="t">09:35–09:45</span><span class="c"><b>停水蓝天停车场 → 走到井珠阁旁</b><span class="r">导航「碧桂园十里银滩水蓝天」，地下车库入口在「水蓝天」三个字右手边；<b>15 元/天封顶、1 小时内免费</b>（24h）；停好车往东南走 280m（约 4 分钟）到井珠阁，从店旁小路下沙滩；<span class="dim">车库满位见 ⑥ 备选</span></span><span class="m">🅿️ 水蓝天地下车库 15 元/天 · 🚶 停车场 → 井珠阁 280m / 约 4 分钟</span></span></li>
+      <li><span class="t">09:45–11:20</span><span class="c"><b>十里银滩沙滩 · 礁石公园</b><span class="r">从井珠阁旁下沙滩，<b>先往南走 500m 到礁石公园</b>（亿年黑灰火山岩礁石群，有热气球 / 白钢琴 / 鸟巢等拍照摆件，旁边是妈祖庙；岩缝退潮能捡小螃蟹贝壳）——<b>礁石长青苔很滑，穿防滑鞋只踩干处</b>，拍 30 分钟；折返沿沙滩慢慢走回，<b>赤脚踩「面粉沙」</b>、看「果冻海」渐变蓝，顺路拍水上运动中心的帆船；10 点前人最少、顺光；11:20 准时往回走</span><span class="m">🚶 井珠阁 → 礁石公园 500m · 往返约 1.5km · 车停水蓝天到 12:30 不动</span></span></li>
+      <li><span class="t">11:20–11:30</span><span class="c"><b>步行回井珠阁</b><span class="r">原路走 160m 回到井珠阁门口；午市 11:00 开，11:30 到已开市半小时，基本不等位</span><span class="m">🚶 沙滩 → 井珠阁 160m / 约 3 分钟</span></span></li>
+      <li><span class="t">11:30–12:30</span><span class="c"><b>午餐 · 井珠阁海鲜饭店</b>（十里银滩鱼鲜好评榜第 1）<span class="r">虾仁海胆炒饭 + 椒盐濑尿虾 + 酱油皇鱿鱼 + 姜葱炒花蟹，人均 77~93；4715 条点评，十年老字号；店在十里银滩一期浅水湾旁，离沙滩 160m</span><span class="m">🚶 店内 · 开门即到不等位</span></span></li>
+      <li><span class="t">12:30–12:50</span><span class="c"><b>取车 → 开去小径湾</b><span class="r">从井珠阁走 280m 回水蓝天车库，扫二维码缴费（15 元）；出车库走石化大道西行 → 小径湾方向（导航「华润小径湾梵高的海」），3km / 8 分钟；<span class="dim">想在一期多待：沙滩边喝杯咖啡，14:00 再去小径湾，室内时间压缩到 1.5h</span></span><span class="m">🚶 280m 取车 → 🚗 驾车西行 3km / 8 分钟</span></span></li>
+      <li><span class="t">12:50–13:05</span><span class="c"><b>停小径湾 → 进商业街</b><span class="r">导航「<b>韵景二路</b>」或「海润路」——<b>马路两边划线格免费路边车位</b>（观海轩 / 梵高的海公寓旁，离商业街 760m）；周五白天基本有位；<span class="dim">满了就导航「华润小径湾梵高的海停车场」（4314 位，淡季 5 元/h、35 元封顶，离商业街 300m）</span>；<b>这是全天第二次、也是最后一次停车，停到 19:05 不动</b>；停好往南走到沙滩再东进商业街</span><span class="m">🅿️ 韵景二路路边免费车位（备选梵高的海 5 元/h）· 🚶 → 商业街 760m / 约 10 分钟</span></span></li>
+      <li><span class="t">13:05–15:30</span><span class="c"><b>西西弗书店 · 海边咖啡 · 艺术中心</b><span class="r">正午最晒的两小时全放室内：书店有座位、咖啡有海景；艺术中心看当天有无展览；饿了商业街有太兴、REDMACHINE 可加餐</span><span class="m">🚶 商业街内步行 <300m</span></span></li>
+      <li><span class="t">15:30–16:40</span><span class="c"><b>乌山头绿道 · 小径湾入口往西</b><span class="r">从商业街西侧入口上绿道，往西走 1km 到第一处观海台 + 礁石栈道，原路返回（往返 2km）；16 点后逆光最佳；<span class="dim">体力有限：在艾美大堂吧坐着看海到日落，或在入口租双人单车骑 30 分钟</span></span><span class="m">🚶 绿道往返 2km（或 🚴 入口租双人车）</span></span></li>
+      <li><span class="t">16:40–17:40</span><span class="c"><b>艾美大堂吧 · 北纬 22 度 · 看日落</b><span class="r">绿道出口即艾美旁；下午茶套餐 168（落地窗海景，携程 4.4）或只点两杯咖啡；日落 17:35，17:15 前到位</span><span class="m">🚶 绿道出口即艾美旁，步行 2 分钟</span></span></li>
+      <li><span class="t">17:40–18:00</span><span class="c"><b>步行去太兴晚餐</b><span class="r">艾美大门出来右转，沿海边步道往东 400m 到商业街 S2 栋；<b>车继续停在梵高的海，晚餐后直接取车走人</b></span><span class="m">🚶 艾美 → 商业街 S2 栋 400m / 约 6 分钟</span></span></li>
+      <li><span class="t">18:00–19:00</span><span class="c"><b>晚餐 · 太兴餐厅</b><span class="r">港式茶餐厅，落地玻璃海景，滑蛋叉烧粉丝煲、蒜香黑椒鸡中翼，人均 78；<span class="dim">备选：REDMACHINE 披萨（人均 90，沙滩边）· 乐美客家小馆（艾美 1 层，海景粤菜）· 老张家（径东村 900m，海鲜 + 窑鸡）</span></span><span class="m">🚶 店内</span></span></li>
+      <li><span class="t">19:00–19:10</span><span class="c"><b>步行取车 → 小径湾返程</b><span class="r">从太兴走回韵景二路车位 660m（约 9 分钟；停梵高的海则 300m），上车后松涛路 → 惠深沿海高速 → 翡翠山（27.5km / 31 分钟）；周五晚 19:00 出发已过峰值</span><span class="m">🚶 步行 660m 取车 → 🚗 驾车 27.5km / 约 31 分钟</span></span></li>
+      <li><span class="t">19:45</span><span class="c"><b>到家</b><span class="r">全天步行约 5km，打车 0 次，<b>停车 2 次</b>（水蓝天 15 元 + 小径湾路边免费 0 元；停梵高的海则约 30 元）；晚餐后直接上高速回家</span><span class="m" style="color:var(--muted);background:#f6f6f5;border-color:var(--line)">— 全天移动到此结束 —</span></span></li>
     </ul>
   </div>
-  <div class="card">
-    <h3 style="margin-top:0">覆盖清单</h3>
-    <div class="tblwrap">
-    <table>
-      <thead><tr><th>类别</th><th>已覆盖（按出现顺序）</th><th>未覆盖 · 原因</th></tr></thead>
-      <tbody>
-        <tr><td><b>景点</b></td><td>小径湾沙滩 · 商业街 · 西西弗 · 艺术中心 · 十里银滩沙滩 · 乌山头绿道（小径湾段）</td><td>黄金海岸 / 清泉古寺 / 包禾塘 / 海韵码头 / 霞涌新村 / 红树林公园：在霞涌街区或澳头，不在小径湾范围，见全覆盖版</td></tr>
-        <tr><td><b>餐饮</b></td><td>百鲜居（午）· 北纬 22 度吧（下午茶）· 太兴（晚）</td><td>老张家 / 陈记：午餐只能吃一顿，作备选 · 乐美自助：与百鲜居冲突 · REDMACHINE：与太兴二选一 · always 好味：与北纬 22 度二选一 · 木屋烧烤：宵夜，一日游不适用 · 霞涌海鲜街：不在小径湾</td></tr>
-      </tbody>
-    </table>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== 预算 ===================== -->
-<section id="budget">
-  <h2>⑥ 预算（2 人 · 小径湾限定版）</h2>
-  <div class="tblwrap">
-  <table>
-    <thead><tr><th>项目</th><th>经济档</th><th>舒适档</th></tr></thead>
-    <tbody>
-      <tr><td>交通（自驾）</td><td class="num">油费 40 + 高速 16 + 停车 30 ≈ 85 元</td><td class="num">≈ 85 元</td></tr>
-      <tr><td>午餐</td><td class="num">百鲜居 人均 50 × 2 = 100 元</td><td class="num">乐美自助 138 × 2 = 276 元</td></tr>
-      <tr><td>下午茶</td><td class="num">西西弗 / 海边咖啡 ≈ 80 元</td><td class="num">北纬 22 度下午茶套餐 168 元</td></tr>
-      <tr><td>晚餐</td><td class="num">REDMACHINE 披萨 ≈ 100 元</td><td class="num">太兴 人均 78 × 2 = 156 元</td></tr>
-      <tr><td>骑行（可选）</td><td class="num">双人车 40 元/h ≈ 40 元</td><td class="num">不骑，步行</td></tr>
-      <tr><td>门票</td><td class="num">0（全部免费）</td><td class="num">0</td></tr>
-      <tr><td><b>合计</b></td><td class="num"><b>≈ 405 元</b></td><td class="num"><b>≈ 685 元</b></td></tr>
-    </tbody>
-  </table>
-  </div>
-  <div class="note">比全覆盖版（525 / 822）省 120~140 元：少了绿道租车 68、取车打车 15，晚餐从海鲜街（人均 90~105）换成披萨 / 茶餐厅（人均 50~78）；但下午茶经济档这边算高了（80 vs 120），所以差距没有更大。</div>
 </section>
 
 <!-- ===================== 备选 ===================== -->
 <section id="backup">
-  <h2>⑦ 备选方案与注意事项</h2>
+  <h2>⑥ 备选方案与注意事项</h2>
   <div class="grid">
     <div class="card">
       <h3 style="margin-top:0">备选方案</h3>
       <ul class="list">
         <li><b>下雨（分散小雨）</b>：删沙滩和绿道，改为「西西弗书店 → 艺术中心 → 太兴午餐 → 艾美大堂吧下午茶 → 乐美晚餐」，点对点驾车，全程室内。</li>
-        <li><b>妈妈体力有限</b>：删十里银滩和绿道，只保留「沙滩 → 百鲜居午餐 → 西西弗 → 大堂吧日落 → 太兴晚餐」，步行压到 2km 以内，17:30 就能回家。</li>
-        <li><b>不想动车（全程一次停车）</b>：午餐换太兴 / REDMACHINE / 乐美，晚餐换商业街另一家；全天不碰车，步行 3km。</li>
+        <li><b>妈妈体力有限</b>：删绿道（省 2km），沙滩只走 30 分钟；保留「十里银滩沙滩 → 井珠阁午餐 → 西西弗 → 大堂吧日落 → 太兴晚餐」，步行压到 3km 以内，17:30 就能回家。</li>
+        <li><b>韵景二路满位</b>：依次试海润路（同一条路往南）→ 小径海岸花园停车场（小径湾入口公交站旁，5 元/h）→ 梵高的海（4314 位最稳）。<b>别导航「观海轩停车场」</b>——那是住客车库，进场要向门岗报备入住信息，淡季 5 元/h、24h 封顶 60 元，非住客按 60 元/天收。</li>
+        <li><b>不想挪车</b>：跳过十里银滩，直接开到小径湾停韵景二路（全天只停 1 次），午餐换太兴 / REDMACHINE / 乐美，沙滩和绿道照走；代价是失去井珠阁和早上人少的十里银滩。</li>
+        <li><b>水蓝天车库满位</b>：往东 500m 有铂金沙滩入口免费停车场（去哪儿 2026 游记），再满则停海云天游客停车场（10 元/次），步行到井珠阁 8~10 分钟；两个备选都在导航里搜名字即可。</li>
         <li><b>时间富余</b>：绿道往西走满 3.3km 到黄金海岸入口（往返 6.6km，2.5h），或开车 3km 去清泉古寺（18:00 闭门，15:00 前到）。</li>
         <li><b>无车</b>：网约车直达小径湾 65~85 元单程，全天 130~170 元；巴士 188→189 换乘，189 路小径湾末班 19:30，晚餐须提前到 17:00。</li>
         <li><b>周五晚高速拥堵</b>：19:00 出发已过峰值；若堵改走北环路 → 中兴北路。</li>
@@ -363,23 +319,20 @@
       <h3 style="margin-top:0">注意事项</h3>
       <ul class="list">
         <li>11/27 为工作日，游客少；餐厅执行工作日时段，乐美晚市 17:30 才开。</li>
-        <li>11 月水温低不建议下水，只踩沙；沙滩 21 点后禁止下水。</li>
+        <li>11 月水温低不建议下水，只踩沙；小径湾沙滩 21 点后禁止下水。</li>
         <li>绿道禁止私人两轮电动车、机动车和宠物上道；租车点在小径湾入口和黄金海岸入口。</li>
-        <li>停车按淡季价约 5 元/h，35 元封顶；梵高的海停车场配充电桩。</li>
+        <li>停车两处：十里银滩水蓝天地下车库 15 元/天封顶（1 小时内免费）；小径湾韵景二路 / 海润路路边划线格免费（满位进梵高的海，淡季 5 元/h、35 元封顶，配充电桩）。<b>路边格只停划线内</b>，非划线区会贴单。</li>
+        <li>十里银滩沙滩无救生员、配套设施少，只在早上散步不下水。</li>
         <li>日落 17:35，17:15 前到位；沿海本周风力偏大，沙滩上体感更冷。</li>
-        <li>十里银滩配套设施不如小径湾，只作顺路散步，不用专门去。</li>
+        <li>十里银滩早上海风大、树荫少，帽子戴牢、外套带上；沙滩上无便利店，水和小食放包里。</li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- ===================== 来源</div>
-  </div>
-</section>
-
-<!-- ===================== 来源 ===================== -->
+<!-- ===================== 来源与假设 ===================== -->
 <section id="sources">
-  <h2>⑧ 信息来源与假设</h2>
+  <h2>⑦ 信息来源与假设</h2>
   <div class="card">
     <h3 style="margin-top:0">假设</h3>
     <ul class="list">
@@ -389,10 +342,6 @@
       <li>本版为「小径湾限定」：范围 = 华润小径湾度假区 + 十里银滩（东 3km）；不含霞涌街区（黄金海岸 / 清泉古寺 / 海鲜街）和澳头。</li>
       <li>所有网页信息查询于 2026-11-26 17:45 前后；天气为预报值。</li>
     </ul>
-    <h3>来源</h3>
-    <p class="src">
-      惠州市气象局 <code>gd.cma.gov.cn/hzsqxj</code> · 大亚湾气象服务公众号（11/23）· 2345 天气 / 墨迹 / ip138（11/25–26 更新）· 腾讯地图路径规划与 POI（驾车/公交/餐厅）· 惠州市交通运输局（出租运价）· 惠州发布·南方+（11/18，霞涌省级度假区攻略，含六站景点/老店/公交/租车/停车）· 南方+（多巴胺公路，黄金虾/蟹蒸鸡推荐店）· 南方+（央视清明推荐，小桂湾/黄金海岸测评）· 携程景点榜与餐厅点评（评分/点评数）· 大众点评（百鲜居/髙佬/太兴/木屋/always 好味）· Trip.com 旅评（北纬 22 度吧/REDMACHINE/新萬興/霞涌市场）· 走搜网 / 惠州交通服务网（189/202 路时刻，11/16 更新）· 同程（景点开放时间）· 工具君小径湾潮汐表
-    </p>
   </div>
 </section>
 
@@ -1086,22 +1035,23 @@ svg.leaflet-image-layer.leaflet-interactive path {
   L.tileLayer('https://rt{s}.map.gtimg.com/realtimerender?z={z}&x={x}&y={y}&type=vector&style=0',{subdomains:'0123',tms:true,maxZoom:18,attribution:'腾讯地图'}).addTo(map);
   var GK='#0e8f6c',RK='#c44e3e',BK='#2c7fb0';
   function line(pts,color,w,dash){ var o={color:color,weight:w,opacity:0.85}; if(dash)o.dashArray=dash; return L.polyline(pts,o); }
-  line([[22.760454, 114.487365], [22.791846, 114.689008]],BK,3).addTo(map);
-  line([[22.794351, 114.693164], [22.791699, 114.711541]],BK,3).addTo(map);
-  line([[22.791699, 114.711541], [22.794351, 114.693164]],BK,3).addTo(map);
-  line([[22.794351, 114.693164], [22.760454, 114.487365]],BK,3).addTo(map);
-  line([[22.791846, 114.689008], [22.7926, 114.687], [22.7913, 114.6855]],GK,3,'8 6').addTo(map);
-  line([[22.7913, 114.6855], [22.787848, 114.690125]],GK,3,'8 6').addTo(map);
+  line([[22.760454, 114.487365], [22.793274, 114.712123]],BK,3).addTo(map);
+  line([[22.793274, 114.712123], [22.794914, 114.693965]],BK,3).addTo(map);
+  line([[22.794914, 114.693965], [22.760454, 114.487365]],BK,3).addTo(map);
+  line([[22.793274, 114.712123], [22.792051, 114.71448], [22.7925, 114.713], [22.787976, 114.714636]],GK,3,'8 6').addTo(map);
+  line([[22.794914, 114.693965], [22.7926, 114.687], [22.7913, 114.6855], [22.787848, 114.690125]],GK,3,'8 6').addTo(map);
   var M=[
-  ["翡翠山（出发点）","大亚湾大道 232 号 · 09:00 出发 / 19:35 到家","home",22.760454,114.487365,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%231a1d1b%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3E%E5%AE%B6%3C/text%3E%3C/svg%3E"],
-  ["1 · 华润小径湾沙滩","09:35 沙滩 + 商业街 · 17:05 日落在西端","spot",22.791846,114.689008,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%230e8f6c%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3E1%3C/text%3E%3C/svg%3E"],
-  ["小径湾梵高的海停车场","官方 4314 位 · 淡季 5 元/h · 全天只停这一次","park",22.794351,114.693164,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2228%22%20height%3D%2228%22%20viewBox%3D%220%200%2028%2028%22%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%225%22%20fill%3D%22%232c7fb0%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3EP%3C/text%3E%3C/svg%3E"],
+  ["翡翠山（出发点）","大亚湾大道 232 号 · 09:00 出发 / 19:45 到家","home",22.760454,114.487365,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%231a1d1b%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3E%E5%AE%B6%3C/text%3E%3C/svg%3E"],
+  ["1 · 华润小径湾沙滩","13:00 商业街 + 沙滩 · 日落在西端","spot",22.791846,114.689008,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%230e8f6c%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3E1%3C/text%3E%3C/svg%3E"],
+  ["P1 · 十里银滩水蓝天停车场","地下车库 · 15 元/天封顶 · 09:35 停 / 12:40 取 · 走 280m 到井珠阁","park",22.793274,114.712123,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2228%22%20height%3D%2228%22%20viewBox%3D%220%200%2028%2028%22%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%225%22%20fill%3D%22%232c7fb0%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3EP%3C/text%3E%3C/svg%3E"],
+  ["P2 · 韵景二路路边车位","免费划线格 · 12:50 停 / 19:05 取 · 满位进梵高的海","park",22.794914,114.693965,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2228%22%20height%3D%2228%22%20viewBox%3D%220%200%2028%2028%22%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%225%22%20fill%3D%22%232c7fb0%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3EP%3C/text%3E%3C/svg%3E"],
   ["2 · 滨海商业街 · 西西弗书店","13:30 室内歇脚 · 海景书店 + 咖啡","spot",22.7926,114.687,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%230e8f6c%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3E2%3C/text%3E%3C/svg%3E"],
-  ["3 · 艾美酒店 · 北纬 22 度大堂吧","16:40 下午茶 168 · 落地窗看日落 17:35","spot",22.7913,114.6855,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%230e8f6c%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3E3%3C/text%3E%3C/svg%3E"],
+  ["3 · 艾美酒店 · 北纬 22 度大堂吧","16:40 下午茶 168 · 落地窗看日落 17:35 · 之后步行 400m 去太兴","spot",22.7913,114.6855,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%230e8f6c%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3E3%3C/text%3E%3C/svg%3E"],
   ["4 · 乌山头绿道 · 小径湾入口","15:30 往西走 1km 到观海台 · 往返 2km","spot",22.787848,114.690125,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%230e8f6c%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3E4%3C/text%3E%3C/svg%3E"],
-  ["A · 百鲜居（十里银滩店）","11:40 午餐 · 点评农家菜榜第 1 · 人均 31~60","food",22.791699,114.711541,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%23a86f12%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3EA%3C/text%3E%3C/svg%3E"],
-  ["5 · 十里银滩沙滩","12:50 顺路散步 800m · 人少","spot",22.7925,114.713,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%230e8f6c%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3E5%3C/text%3E%3C/svg%3E"],
-  ["B · 太兴餐厅（商业街 S2）","18:00 晚餐 · 海景茶餐厅 · 人均 78","food",22.7923,114.6882,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%23a86f12%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3EB%3C/text%3E%3C/svg%3E"],
+  ["A · 井珠阁海鲜饭店（十里银滩）","11:30 午餐 · 开门即到 · 鱼鲜好评榜第 1","food",22.792051,114.71448,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%23a86f12%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3EA%3C/text%3E%3C/svg%3E"],
+  ["5 · 十里银滩沙滩","09:45 井珠阁旁下沙滩 · 面粉沙 + 果冻海","spot",22.7925,114.713,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%230e8f6c%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3E5%3C/text%3E%3C/svg%3E"],
+  ["5a · 礁石公园","井珠阁往南 500m · 亿年黑礁石 + 白钢琴/热气球拍照摆件 · 防滑鞋","spot",22.787976,114.714636,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%230e8f6c%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3E5%3C/text%3E%3C/svg%3E"],
+  ["B · 太兴餐厅（商业街 S2）","18:00 晚餐 · 艾美步行 400m · 海景茶餐厅","food",22.7923,114.6882,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%23a86f12%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3EB%3C/text%3E%3C/svg%3E"],
   ["C · 老张家海鲜农庄（备选）","径东村 900m · 海鲜 + 窑鸡 · 人均 62","food",22.7905,114.6845,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%23a86f12%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3EC%3C/text%3E%3C/svg%3E"],
   ["D · 陈记窑鸡王（备选）","晓阳村 1km · 十八年老字号 · 人均 60","food",22.7928,114.6905,"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2213%22%20fill%3D%22%23a86f12%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.5%22/%3E%3Ctext%20x%3D%2215%22%20y%3D%2220%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%20fill%3D%22%23fff%22%20font-family%3D%22-apple-system%2CPingFang%20SC%2Csans-serif%22%3ED%3C/text%3E%3C/svg%3E"]
 ];
@@ -1111,7 +1061,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   });
   var ViewCtl=L.Control.extend({options:{position:'topright'},onAdd:function(map){
     var c=L.DomUtil.create('div','leaflet-bar'); c.style.background='#fff';
-    var b1=L.DomUtil.create('button','lm-btn',c); b1.textContent='步行圈'; b1.style.borderRadius='6px 0 0 6px';
+    var b1=L.DomUtil.create('button','lm-btn',c); b1.textContent='小径湾'; b1.style.borderRadius='6px 0 0 6px';
     var b2=L.DomUtil.create('button','lm-btn',c); b2.textContent='含十里银滩'; b2.style.borderRadius='0 6px 6px 0'; b2.style.borderLeft='none';
     var b3=L.DomUtil.create('button','lm-btn',c); b3.textContent='全程'; b3.style.borderRadius='0 6px 6px 0'; b2.style.borderRadius='0'; b3.style.borderLeft='none';
     L.DomEvent.disableClickPropagation(c);
@@ -1124,5 +1074,25 @@ svg.leaflet-image-layer.leaflet-interactive path {
   setTimeout(function(){ map.fitBounds([[22.7865,114.6835],[22.7950,114.7160]],{padding:[20,20]}); },300);
 })();
 </script>
-</body>
+<script>
+setTimeout(function(){
+  var out=[]; var el=document.getElementById('leafletMap');
+  if(!window.L){ out.push("FAIL: Leaflet not loaded"); }
+  else {
+    out.push("map size "+el.clientWidth+"x"+el.clientHeight);
+    var tiles=el.querySelectorAll(".leaflet-tile");
+    out.push("tiles="+tiles.length+" loaded="+Array.from(tiles).filter(function(i){return i.complete&&i.naturalWidth>0}).length);
+    var mk=el.querySelectorAll(".leaflet-marker-icon");
+    out.push("markers="+mk.length);
+    out.push("paths="+el.querySelectorAll(".leaflet-interactive").length);
+    out.push("view btns="+Array.from(el.querySelectorAll(".lm-btn")).map(function(b){return b.textContent}).join("/"));
+    mk.forEach(function(m,i){ if(i===1){ m.dispatchEvent(new MouseEvent('click',{bubbles:true})); } });
+    setTimeout(function(){
+      var pop=el.querySelector('.leaflet-popup-content');
+      out.push("popup(1): "+(pop?pop.textContent.replace(/\s+/g,' ').slice(0,100):'NONE'));
+      var pre=document.createElement("pre"); pre.id="__m"; pre.textContent=out.join("\n"); document.body.appendChild(pre);
+    },600);
+  }
+},6000);
+</script></body>
 </html>
